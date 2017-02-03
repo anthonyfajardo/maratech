@@ -1,0 +1,453 @@
+h1, h2, h3, h4, h5{
+	font-family: 'Playfair Display', serif;
+}
+
+p, a{
+	font-family: 'Lato', sans-serif;
+}
+
+/**********************
+HEADER SECTION 
+***********************/
+
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+header .jumbotron{
+
+	padding: 200px 0;
+	position: relative;
+	background-color: rgba(0,0,0,0.6);
+	margin-bottom: 0;
+}
+
+header .jumbotron:after{
+	content: "";
+	position: absolute;
+	background-image: url(images/background2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+header .jumbotron h2{
+	color: #fff;
+}
+header .jumbotron h2 span{
+	color: #44C7BC;
+}
+
+.maraLogo{
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 25px;
+	padding: 5px;
+}
+
+.navbar-brand img{
+	width: 100px;
+	height: auto;
+	padding: 2px;
+	background-color: white;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+.navbar-default{
+	border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	text-align: center;
+}
+
+.title{
+	margin-top: 50px;
+}
+
+.sectionHeader{
+	position: relative;
+	display: table;
+	vertical-align: middle;
+	top: -45px;
+}
+
+.sectionTitle h2{
+	background: white;
+	border-top: 5px solid #7B3073;
+	border-bottom: 5px solid #7B3073;
+	border-left: 2px solid #7B3073;
+	border-right: 2px solid #7B3073;
+	padding: 5px 0;
+}
+
+.vertical-center-row{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.sectionLineThrough{
+	height: 20px;
+	border-bottom: 2px solid black;
+	width: 75%;
+	margin: 0 auto;
+}
+
+
+.offer{
+	margin: 50px 0;
+	
+}
+.offer img{
+	width: 200px;
+	height: auto;
+}
+
+
+/*********************************
+COMPANY HISTORY
+**********************************/
+
+.history p{
+	color: #DBD2D2;
+}
+
+.sectionHistory .jumbotron{
+	position: relative;
+	background-color: rgba(0,0,0,0.7);
+	margin-bottom: 0;
+}
+
+.sectionHistory .jumbotron:after{
+	content: "";
+	position: absolute;
+	background-image: url(images/background1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+.historyTitle h2{
+	color: #DBD2D2;
+	margin: 30px 0 75px 0;
+}
+
+
+
+/***********************************
+SERVICES SECTION 
+************************************/
+
+.thumbnail{
+
+	position: relative;
+}
+
+.thumbnail:hover .filter{
+	background: rgba(0,0,0,0.7);
+}
+
+.thumbnail:hover h3{
+	z-index: 100;
+}
+
+.thumbnail h3{
+	color: #fff;
+	position: absolute;
+	top: 35%;
+	left: 10%;
+}
+
+.filter{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.modal-dialog img{
+	width: 100%;
+	text-align: center;
+}
+
+/***********************************
+CONTACT SECTION 
+************************************/
+
+
+.contactWelcome h4{
+	margin-bottom: 50px;
+}
+
+.corporateImg{
+	margin-bottom: 50px;
+}
+
+.maraContact{
+	margin: 25px 0;
+}
+
+
+.maraMap,
+.maraAddress{
+	margin-bottom: 50px;
+}
+
+.contactInfo{
+	height: 125px;
+	margin: 7px 0;
+}
+.contactInfo p{
+	margin-bottom: 0;
+}
+
+.footer{
+	height: 25px;
+	margin: 25px 0;
+}
+
+.footer a{
+	color: grey;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: blue;
+
+}
+.footerNav a,
+.footerTerms a{
+	margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/******************************
+MEDIA QUERIES
+*******************************/
+
+
+
+
+@media screen and (min-width: 1200px){  /*large*/
+	/*body{background: red ;}*/
+	.maraMap iframe{
+		width: 1100px;
+		height: 300px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 1200px){  /*medium*/
+	/*body{background: blue;}*/
+
+	.maraMap iframe{
+		width: 800px;
+		height: 300px;
+		text-align: center;
+	}
+
+
+}
+@media screen and (max-width: 991px){ /*small*/
+	/*body{background: green;}*/
+
+
+/**************************
+NAVIGATION 
+***************************/
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
+   .navbar-toggle .icon-bar{
+		width: 40px;
+		height: 3px;
+		padding: 2px 0;
+		margin: 2px 0;
+    
+    }
+
+
+
+
+
+	header .jumbotron h2{
+		font-size: 48px;
+	}
+
+	.navbar-brand img{
+		width: 150px;
+	}
+
+	.welcomeMessage p{
+		text-align: center;
+	}
+	.historyImg{
+		margin-bottom: 50px;
+	}
+	.maraMap iframe{
+		width: 700px;
+		height: 300px;
+	}
+	.navbar-inverse .navbar-nav>li>a{
+		font-size: 2.5em;
+		padding: 25px 0;
+	}
+	p, .history p, .historyButton button{
+		font-size: 36px;
+		margin: 25px 0;
+	}
+	
+	img.historyImg{
+		width: 700px;
+		height: auto;
+	}
+	.sectionTitle h2{
+		font-size: 64px;
+		padding: 25px;
+	}
+	.smt h3{
+		left: 5%;
+	}
+
+	.offer h2{
+		font-size: 56px;
+	}
+	.offer img{
+		width: 500px;
+		height: auto;
+	}
+
+	.services h3{
+		font-size: 2em;
+		top: 35%;
+		z-index: 1;
+	}
+	
+	.capabilities h3{
+		top: 40%;
+	}
+
+	.modal-dialog{
+		width: 80%;
+	}
+
+	.modal-dialog h2{
+		font-size: 56px;
+
+	}
+	
+	.modal-dialog h4{
+		font-size: 36px;
+	}
+
+	.modal-dialog p{
+		font-size: 24px;	}
+
+	.modal-dialog li{
+		font-size: 18px;
+	}
+
+	.qualityImages{
+		margin: 50px 0;
+	}
+	
+	.contactWelcome h4{
+		font-size: 3em;
+	}
+	
+	.contactInfo{
+		margin: 25px 0;
+		height: auto;
+	}
+	.contactInfo h4{
+		font-size: 40px;
+	}
+
+	.contactInfo p{
+		font-size: 30px;
+	}
+
+	.contactInfo a{
+		font-size: 30px;
+	}
+
+	.maraAddress p{
+		font-size: 24px;
+	}
+
+	.footer a, .footer span{
+		font-size: 24px;
+	}
+	.footerDiv{
+		margin: 10px 0;
+	}
+}
+@media screen and (max-width: 768px){ /*extra-small*/
+	/*body{background: orange;}*/
+	.welcomeTitle h2{
+		font-size: 18px;
+	}
+
+}
